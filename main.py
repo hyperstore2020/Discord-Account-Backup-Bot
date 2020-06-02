@@ -11,7 +11,7 @@ def save_friends():
             username = 'Username: %s#%s | User ID: %s\n' % (friend['user']['username'], friend['user']['discriminator'], friend['id'])
             sys.stdout.write(username)
             with open('Discord Friends.txt', 'a', encoding = 'UTF-8') as f:
-                f.write('%s' % (username))
+                f.write(username)
             saved_friends += 1
 
     with open('Discord Friends.txt', 'r', encoding = 'UTF-8') as f:
